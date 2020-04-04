@@ -2,10 +2,38 @@
 Final project for UCI's Master of Computer Science program's CS 273P: Machine Learning and Data Mining class that uses machine learning to analyze a data set and predict a person's income
 ## Developed By
 Harry Pham and Keith Tachibana
-## Final Project Datasets
-- Adult: [dataset](https://archive.ics.uci.edu/ml/datasets/adult), [code & doc](adult/)
-- Diabetes: [dataset](https://archive.ics.uci.edu/ml/datasets/Diabetes+130-US+hospitals+for+years+1999-2008), [code & doc](diabetes/)
-- Emotion Detection: [dataset](https://github.com/muxspace/facial_expressions), [code & doc](emotion/)
-- IMDB Review: [dataset](http://ai.stanford.edu/~amaas/data/sentiment/), [code & doc](imdb/)
-- Street View House Numbers (format 2): [dataset](http://ufldl.stanford.edu/housenumbers/), [code & doc](svhn/)
-- Toxic Comment Challenge: [dataset](https://www.kaggle.com/c/jigsaw-toxic-comment-classification-challenge/), [code & doc](toxic/)
+## Dataset
+https://archive.ics.uci.edu/ml/datasets/adult
+## Development
+#### System Requirements
+| Requirement |      Version     |
+|-------------|-----------------:|
+| Python      |  3.6 or higher   |
+| Numpy       |  1.15 or higher  |  
+| Pandas      | 0.24.0 or higher |
+#### Getting Started
+1. Import the provided data_loader, which depends on your project's source root directory
+  `import data_loader` or `from . import data_loader`
+2. Load the training data using said data_loader
+- __**data_loader**.***load_train_data***(*train_file_path*, *valid_rate*=0.1, *is_df*=True)__
+
+- _INPUT:_
+- ***train_file_path***: training file path of 'adult.data'
+- ***valid_rate***: validation data rate (0 - 1), 0.1 by default
+- ***is_df***: whether or not returned objects are pandas.DataFrame, True by default
+
+- _OUTPUT:_
+- ***train_features***: training feature 2D-array (numpy.ndarray, str and int columns)
+- ***train_labels***: training label array (numpy.ndarray)
+- ***valid_features***: validation feature 2D-array (numpy.ndarray, str and int columns)
+- ***valid_labels***: validation label array (numpy.ndarray)
+3. Load the testing data using said data_loader
+- __**data_loader**.***load_test_data***(*test_file_path*, *is_df*=True)__
+
+- _INPUT:_
+- ***test_file_path***: test file path of 'adult.test'
+- ***is_df***: whether or not returned objects are pandas.DataFrame, True by default
+
+- _OUTPUT:_
+- -***test_features***: test feature 2D-array (numpy.ndarray, str and int columns)
+- -***test_labels***: test label array (numpy.ndarray)
