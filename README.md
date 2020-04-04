@@ -6,11 +6,12 @@ Harry Pham and Keith Tachibana
 https://archive.ics.uci.edu/ml/datasets/adult
 ## Development
 #### System Requirements
-| Requirement |      Version     |
-|-------------|-----------------:|
-| Python      |  3.6 or higher   |
-| Numpy       |  1.15 or higher  |  
-| Pandas      | 0.24.0 or higher |
+|     Requirement   |      Version     |
+|-------------------|-----------------:|
+| Jupyter Notebook  |  5.5.0 or higher |
+| Numpy             |  1.15 or higher  |  
+| Pandas            | 0.24.0 or higher |
+| Python            |  3.6 or higher   |
 #### Getting Started
 1. Import the provided data_loader, which depends on your project's source root directory
   `import data_loader` or `from . import data_loader`
