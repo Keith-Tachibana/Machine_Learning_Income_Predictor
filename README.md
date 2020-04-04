@@ -21,4 +21,4 @@ https://archive.ics.uci.edu/ml/datasets/adult
   ```shell
   cd Machine_Learning_Income_Predictor/
   ```
-3. Launch Jupyter Notebook 
+3. Launch Jupyter Notebook in your browser and open the files in the `jupyter_notebook` directory
